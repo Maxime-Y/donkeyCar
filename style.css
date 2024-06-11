@@ -1,0 +1,386 @@
+/* HomePage */
+* {
+    text-decoration: none !important;
+}
+.expDiv {
+    text-align: center;
+    background-color: #FF5F00;
+}
+.divHomepage2 {
+    display: flex;
+    justify-content: start !important;
+}
+.divHomepage3 {
+    display: flex;
+    justify-content: end !important;
+    gap: 20px;
+    color: white;
+}
+.navbar {
+    background-color: transparent;
+    padding: 10px;
+}
+.divBigHomePage1 {
+    background-image: url(Image/CarHome.png),  radial-gradient(circle, rgba(87,97,103,1) 0%, rgba(187,200,207,1) 0%, rgba(87,97,103,1) 54%, rgba(4,11,17,1) 85%, rgba(4,11,17,1) 100%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+.formHomePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.homePageCardGen {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.homePageCard {
+    border-radius: 20px !important;
+}
+.homePageCard button {
+    background-color: #FF5F00;
+}
+.homePageCard button:hover {
+    background-color: #d15a16;
+    color: white;
+}
+.homePageCard a {
+    color: white;
+}
+.homePageH1H2 {
+    background-color: #FF5F00;
+    text-align: center;
+    padding: 15px;
+}
+.homePageH1H2 h1 {
+    color: black;
+    font-size: 5rem;
+    line-height: 5.7rem;
+}
+.homePageH1H2 h2 {
+    color: black;
+    font-size: 1.1rem;
+}
+.divHomePage4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    gap: 50px;
+}
+.divHomePage4 h3 {
+    font-size: 1rem;
+    color: black;
+    font-weight: 700;
+    margin: 20px;
+}
+.divHomePage4 p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.divHomePageCard4 {
+    transition: transform 0.5s ease;
+    flex: 1;
+    cursor: default;
+}
+.divHomePageCard4:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+.divFooter {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+/* Layout */
+
+.header{
+    background-color: #1A1A1A;  
+    padding-left: 10%;  
+    padding-right: 10%;
+}
+
+.footer{
+    background-color: #1A1A1A; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2000;
+}
+.footer-text {
+    color: #888;     
+}
+.underline-animation {
+    position: relative;
+    text-decoration: none;
+}
+
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: width 0.3s ease-out;
+}
+
+.underline-animation:hover::after {
+    width: 100%;
+}
+.userName {
+    margin-right: 15px;
+}
+.cartHeader {
+    margin-right: 15px;
+}
+
+#vehicleCarousel {
+    margin-top: -80px;   
+}
+.carousel-item img {
+    height: 100%; 
+    width: 100%; 
+     
+    object-fit: cover; 
+}
+.carousel-item {
+    height: 570px;   
+}
+#vehicleCarousel .carousel-control-prev-icon,
+#vehicleCarousel .carousel-control-next-icon {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(93%) contrast(88%);
+}
+
+#vehicleCarousel .carousel-control-prev,
+#vehicleCarousel .carousel-control-next {
+    color: #000; /* Couleur du texte des contrôles pour une meilleure visibilité */
+}
+
+
+/* vehicle page */
+
+.vehiclePage1 {
+    border-bottom: 1px solid #8888883c;
+    padding: 15px;
+}
+.vehiclePage1 h1 {
+    margin-left: 10%;
+    font-size: 2rem;
+}
+.vehiclePage2 {
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.vehiclePage2 button {
+    background-color: #F4F4F9;
+    border-radius: 20px !important;
+    border: none;
+    color: black;
+}
+.vehiclePage2 .dropdown-menu {
+    border: none;
+    padding: 10px;
+}
+.vehiclePage2 .dropdown-item {
+    background-color: #F4F4F9;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    margin-bottom: 10px;
+}
+.btnVehicleAvailable {
+    cursor: default !important;
+    background-color: #f4f4f976 !important;
+    color: black !important;
+}
+.iconGear {
+    width: 12px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+}
+.vehiclePage3 {
+    margin-left: 10% !important;
+    margin-right: 10%!important;
+    margin-top: 2% !important;
+}
+.vehiclePage3 .card {
+    background: rgb(159,173,180);
+    background: radial-gradient(circle, rgba(159,173,180,1) 23%, rgba(52,63,66,1) 70%, rgba(21,25,28,1) 90%);
+    border-radius: 15px !important;
+    padding: 15px !important;
+}
+.vehiclePage3 a {
+    color: white;
+}
+.vehiclePage3 .card:hover {
+    outline: 4px solid rgb(125, 125, 125);
+    outline-offset: 4px;
+    transition: 0.1s;
+}
+.vehiclePage3 .card:active {
+    outline: 4px solid #FF5F01;
+    outline-offset: 4px;
+    transition: 0.1s;
+}
+.vehicleType {
+    color: gray;
+    font-size: smaller;
+}
+.btnVehicleAvailable {
+    background-color: rgb(79,88,91) !important;
+    color: white !important;
+    border-radius: 20px !important;
+    font-size: smaller !important;
+    padding-top: 0px !important;
+    padding-bottom:0px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.btnVehicleElec {
+    background-color: #FF5F00 !important;
+    color: white !important;
+    border-radius: 20px !important;
+    font-size: smaller !important;
+    padding-top: 0px !important;
+    padding-bottom:0px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;  
+}
+.iconElec {
+    width: 12px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+}
+.vehiclePriceDay {
+    font-size: larger;
+    margin-bottom: unset;
+}
+
+/* Modal connexion*/
+
+.custom-link{
+    color: #FF5F00;
+}
+
+/* Modal reservation */
+
+.homePageReservation button {
+    background-color: #FF5F00;
+    color: white; 
+}
+
+.homePageReservation button:hover {
+    background-color: rgb(195, 108, 1); 
+}
+
+
+/* Modal zoom in */
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-zoom-in {
+    animation: zoomIn 0.5s;
+}
+
+/* Reservation detail */
+
+.imageReservationDetail{
+    margin-top: -60px; 
+    z-index:-1; 
+   }
+.reservationDetail{
+    background-image: radial-gradient(circle, rgba(87,97,103,1) 0%, rgba(187,200,207,1) 0%, rgba(87,97,103,1) 54%, rgba(4,11,17,1) 85%, rgba(4,11,17,1) 100%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.info-group {
+    border: 1px solid black;
+    border-radius:10px 10px 0px 0px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.info-group2 {
+    border: 1px solid black;
+    border-radius:0px 0px 10px 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Modal vehicle details */
+
+.modal-vehicle .modal-header {
+    display: none !important;
+}
+.modal-vehicle .modal-footer {
+    display: none !important;
+}
+.modal-vehicle .modal-dialog {
+    max-width: 60%!important;
+}
+.modal-vehicle .modal-body {
+    padding: 0 !important;
+}
+.colDetails {
+    padding: 20px !important;
+}
+.btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.btn-suivant {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF5F00 !important;
+    color: white !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border: none !important;
+}
+.col-img {
+    border-top-left-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+    color: white;
+    background: rgb(159,173,180);
+    background: radial-gradient(circle, rgba(159,173,180,1) 23%, rgba(52,63,66,1) 70%, rgba(21,25,28,1) 90%);
+}
+.infoVehicle {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* logDetail */
+
+.nav-tabs {
+    margin-bottom: 20px;
+}
